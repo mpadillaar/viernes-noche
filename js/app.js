@@ -77,7 +77,9 @@
     ui.siguiente.hidden = false;
     ui.siguiente.disabled = true;
     ui.rebobinar.hidden = true;
-    ui.contador.textContent = String(Math.round(i / (pasos.length - 1) * 9999)).padStart(4, '0');
+    // Contador de cinta H:MM:SS: recorre los 2 h 18 min de «Cazadores del Tiempo» a lo largo del relato
+    const s = Math.round(i / (pasos.length - 1) * (2 * 3600 + 18 * 60));
+    ui.contador.textContent = `${Math.floor(s / 3600)}:${String(Math.floor(s / 60) % 60).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
     ui.progreso.style.width = (i / (pasos.length - 1) * 100) + '%';
 
     const seccion = document.createElement('section');

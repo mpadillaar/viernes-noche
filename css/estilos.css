@@ -81,7 +81,7 @@ em { font-style: italic; }
   background: #000; padding: 4px 10px; border-radius: 4px;
   letter-spacing: 2px;
 }
-.barra__led { width: 8px; height: 8px; border-radius: 50%; background: #ff2b2b; box-shadow: 0 0 8px #ff2b2b; }
+.barra__play { color: #7dff7d; font-size: 18px; text-shadow: 0 0 6px rgba(125, 255, 125, .8); }
 .barra__epoca { flex: 1; text-align: center; font-weight: 600; color: var(--texto-suave); font-size: 15px; }
 body[data-epoca="1992"] .barra__epoca { font: 22px/1 var(--fuente-retro); color: var(--aviso); letter-spacing: 1px; }
 .boton-icono {
