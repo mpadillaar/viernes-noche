@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Viernes noche: 1992 ▶▶ 2026</title>
+  <meta name="description" content="Relato interactivo sobre la remediación del videoclub VHS por las plataformas de streaming (PEC2, Cultura Digital, UOC).">
+  <meta name="author" content="Marcos Padilla Arroyo">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body data-epoca="intro">
+  <a class="saltar" href="#pantalla">Saltar al contenido</a>
+
+  <header class="barra">
+    <div class="barra__contador" aria-label="Contador de la cinta">
+      <span class="barra__led" aria-hidden="true"></span>
+      <span id="contador">0000</span>
+    </div>
+    <div class="barra__epoca" id="epoca" aria-live="polite"></div>
+    <button class="boton-icono" id="btn-sonido" type="button" aria-pressed="true" title="Activar o silenciar el sonido">
+      <span aria-hidden="true">🔊</span><span class="sr">Sonido</span>
+    </button>
+  </header>
+
+  <main id="pantalla" class="pantalla" tabindex="-1"></main>
+
+  <nav class="controles" aria-label="Navegación del relato">
+    <button class="boton boton--secundario" id="btn-rebobinar" type="button" hidden>◀◀ <span>Así era en 1992</span></button>
+    <div class="controles__progreso" aria-hidden="true"><div id="progreso"></div></div>
+    <button class="boton" id="btn-siguiente" type="button" hidden disabled>Siguiente ▶</button>
+  </nav>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal__caja" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+      <h2 id="modal-titulo"></h2>
+      <div id="modal-cuerpo"></div>
+      <button class="boton" id="modal-cerrar" type="button">Volver a 2026 ▶▶</button>
+    </div>
+  </div>
+
+  <div class="ruido" id="ruido" aria-hidden="true"><span id="ruido-texto"></span></div>
+
+  <noscript><p class="noscript">Este relato interactivo necesita JavaScript para funcionar.</p></noscript>
+
+  <script src="js/sonido.js"></script>
+  <script src="js/contenido.js"></script>
+  <script src="js/escenas.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
