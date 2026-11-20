@@ -207,7 +207,7 @@
         <div class="escena__numero">Fin de la cinta</div>
         <h1 class="escena__titulo">¿Qué ha cambiado?</h1>
       </div>
-      <p class="tesis">Prime Video elimina la espera del videoclub… pero el software vuelve a simular su escasez: la película ya nunca está alquilada, pero caduca a las 48 horas.</p>
+      <p class="tesis">Prime Video elimina la espera física del videoclub… pero el software vuelve a simular a propósito su escasez: la película alquilada ya nunca está agotada, pero caduca a las 48 horas de darle al play.</p>
       <p class="escena__texto">Es la <strong>remediación</strong>: el medio nuevo no borra al anterior, lo absorbe y lo transforma (Bolter y Grusin, 2011). Y es la <strong>transcodificación</strong>: las costumbres culturales del videoclub se reescriben como reglas del software (Manovich, 2005).</p>
       <div class="resumen">
         <div class="resumen__col"><h3>🔁 Se apropia</h3><ul>${lista('apropia')}</ul></div>
@@ -219,12 +219,13 @@
         <summary><strong>Créditos y referencias</strong></summary>
         <ul>
           <li>Idea, guion y diseño: Marcos Padilla Arroyo. PEC2 de Cultura Digital (20.644), Universitat Oberta de Catalunya, 2026.</li>          
-          <li>Las películas, actores y comercios del relato son ficticios. La interfaz de 2026 es genérica y no reproduce la de ninguna plataforma.</li>
+          <li>Las películas, actores y comercios del relato son ficticios. La interfaz de 2026 es genérica: está inspirada en Prime Video, pero no reproduce su diseño.</li>
           <li>Efectos de sonido generados en el navegador con la Web Audio API. Tipografías VT323 e Inter (Google Fonts, licencia SIL Open Font).</li>
           <li>Plazos de alquiler, precios y anuncios basados en Albertini (2020a) y Solo (2024).</li>
+          <li>Diseñado siguiendo la espiral del pensamiento creativo (Resnick, 2007).</li>
         </ul>
         <h3 style="font-size:16px;margin-top:12px">Referencias</h3>
-        <ul>${REFERENCIAS.map(r => `<li>${r}</li>`).join('')}</ul>
+        <ul>${REFERENCIAS.map(r => `<li>${r.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>')}</li>`).join('')}</ul>
       </details>`;
     el.querySelector('#otra-vez').addEventListener('click', () => {
       reiniciarEstado();

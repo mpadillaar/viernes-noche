@@ -1,4 +1,4 @@
-/* Contenido del relato: películas (ficticias), fichas Manovich, parejas y créditos.
+/* Contenido del relato: películas (ficticias), fichas Manovich, equivalencias y créditos.
    Separado de la lógica para poder revisar los textos con facilidad. */
 
 const PELICULAS = [
@@ -29,23 +29,23 @@ const FICHAS = {
   socio: {
     titulo: 'Socio de todo',
     apropia: 'La idea de ser socio de un club que te da acceso a las películas.',
-    extiende: 'La suscripción incluye vídeo, envíos, música y más; y desde los Canales se contratan otros servicios: un videoclub de videoclubes.',
+    extiende: 'La suscripción incluye vídeo, envíos, música y más; y desde los Canales se contratan otros servicios (Albertini, 2020b): un videoclub de videoclubes.',
     habito: 'Pasamos de pagar por cada película a pagar una cuota fija cada mes, veamos algo o no.',
     concepto: 'Metamedio',
-    explicacion: 'El ordenador simula todos los medios anteriores y les añade propiedades nuevas (Kay y Goldberg, 1977; Manovich, 2013).'
+    explicacion: 'El ordenador simula todos los medios anteriores y les añade propiedades nuevas (Kay y Goldberg, 1977, como se citó en Manovich, 2013).'
   },
   catalogo: {
     titulo: 'Una estantería para cada perfil',
     apropia: 'La carátula se convierte en miniatura y la estantería, en filas por géneros y novedades.',
-    extiende: 'El catálogo se reordena para cada perfil, y la misma película se muestra con portadas distintas según a quién se enseñe.',
+    extiende: 'El catálogo se reordena para cada perfil, y la misma película se muestra con portadas distintas según a quién se enseñe (Amazon, 2026).',
     habito: 'Ya no se elige en familia en el pasillo: cada perfil recibe su propia selección.',
     concepto: 'Base de datos y variabilidad',
-    explicacion: 'La interfaz decide cómo recorremos la base de datos, y un mismo objeto puede tener muchas versiones (Manovich, 2005). Carrillo Bernal (2019) lo llama «entretenimiento de algoritmo».'
+    explicacion: 'La interfaz decide cómo recorremos la base de datos, y un mismo objeto puede tener muchas versiones (Manovich, 2005). Carrillo Bernal (2018), a propósito de Netflix, lo llama entretenimiento de algoritmo.'
   },
   consejo: {
     titulo: 'El dependiente invisible',
     apropia: 'La figura de quien te recomienda qué ver.',
-    extiende: 'El algoritmo recomienda a partir de todo lo que has visto, y X-Ray superpone a la imagen datos de IMDb, la base de datos de cine que Amazon compró en 1998.',
+    extiende: 'El algoritmo recomienda a partir de todo lo que has visto, y X-Ray superpone a la imagen datos de IMDb, la base de datos de cine de Amazon.',
     habito: 'Desaparece la conversación en el mostrador con alguien que te conoce.',
     concepto: 'Automatización e hipermediación',
     explicacion: 'El software automatiza tareas que antes hacían personas (Manovich, 2005) y llena la pantalla de capas de información (Bolter y Grusin, 2011).'
@@ -64,7 +64,7 @@ const FICHAS = {
     extiende: 'El software retira el acceso automáticamente: sin mostrador, sin multas y sin rebobinar.',
     habito: 'Ya no hay que volver a la tienda, pero sigue habiendo prisa: 48 horas para terminar la película.',
     concepto: 'Transcodificación',
-    explicacion: 'Una costumbre de la capa cultural («hay que devolverla el lunes») se reprograma como regla de la capa informática (Manovich, 2005).'
+    explicacion: 'Una costumbre de la capa cultural («hay que devolverla el lunes») se reprograma como regla de la capa informática, que acaba moldeando la cultural (Manovich, 2005).'
   },
   ver: {
     titulo: 'Los botones del vídeo',
@@ -80,7 +80,7 @@ const FICHAS = {
     extiende: 'Tu biblioteca está en la nube y la puedes ver en cualquier dispositivo.',
     habito: 'Pasamos de poseer objetos que se prestan y se regalan a tener accesos que dependen del servicio.',
     concepto: 'Virtualización',
-    explicacion: 'La película deja de ser una cosa y se convierte en un acceso (Lévy, 2007): al «comprar» se adquiere una licencia de uso.'
+    explicacion: 'La película deja de ser un objeto situado en un lugar y se convierte en un acceso que se activa desde cualquier pantalla (Lévy, 2007): al «comprar» se adquiere una licencia de uso (<em>Caudel v. Amazon.com, Inc.</em>, 2021).'
   }
 };
 
@@ -122,15 +122,16 @@ const EQUIVALENCIAS = [
 
 /* Créditos y referencias mostradas en la pantalla final */
 const REFERENCIAS = [
-  'Albertini. (2020a). Amazon Prime Video lanza su servicio de alquiler y venta de películas y documentales en España. <em>Espinof</em>.',
-  'Albertini. (2020b). Amazon Channels llega a España con MGM, Starzplay y Mubi. <em>Espinof</em>.',
-  'Bolter, J. D. y Grusin, R. (2011). Inmediatez, hipermediación, remediación. <em>CIC. Cuadernos de Información y Comunicación, 16</em>, 29-57.',
-  'Carrillo Bernal, J. (2019). <em>Paradigma Netflix: El entretenimiento de algoritmo</em>. Editorial UOC.',
-  'Karlinsky, M. (2023). <em>I\'m the CEO of IMDb</em>. About Amazon.',
-  'Kay, A. y Goldberg, A. (1977). Personal dynamic media. <em>Computer, 10</em>(3), 31-41.',
-  'Lévy, P. (2007). <em>Cibercultura: La cultura de la sociedad digital</em>. Anthropos.',
-  'Manovich, L. (2005). <em>El lenguaje de los nuevos medios de comunicación</em>. Paidós.',
-  'Manovich, L. (2013). <em>El software toma el mando</em>. Editorial UOC.',
-  'Resnick, M. (2007). All I really need to know (about creative thinking) I learned (by studying how children learn) in kindergarten. <em>Creativity &amp; Cognition</em>, 1-6.',
-  'Solo, M. (2024). Prime Video meterá dos minutos de anuncios por hora de contenido a partir de hoy en España. <em>Espinof</em>.'
+  'Albertini. (2020a, 28 de abril). <em>Amazon Prime Video lanza su servicio de alquiler y venta de películas y documentales en España</em>. Espinof. https://www.espinof.com/en-digital/amazon-prime-video-lanza-su-servicio-alquiler-venta-peliculas-documentales-espana',
+  'Albertini. (2020b, 4 de noviembre). <em>Amazon Channels llega a España con MGM, Starzplay y Mubi entre los canales del nuevo servicio de la plataforma</em>. Espinof. https://www.espinof.com/online/amazon-channels-llega-a-espana-mgm-starzplay-mubi-canales-nuevo-servicio-plataforma',
+  'Amazon. (2026, 28 de octubre). <em>Personalized artwork and variants</em>. Video Central. https://videocentral.amazon.com/support/delivery-experience/artwork/personalized-artwork-delivery-variants',
+  'Bolter, J. D. y Grusin, R. (2011). Inmediatez, hipermediación, remediación (E. Aladro, Trad.). <em>CIC. Cuadernos de Información y Comunicación, 16</em>, 29-57. https://doi.org/10.5209/rev_CIYC.2011.v16.2 (Trabajo original publicado en 1999)',
+  'Carrillo Bernal, J. (2018). <em>Paradigma Netflix: El entretenimiento de algoritmo</em>. Editorial UOC.',
+  '<em>Caudel v. Amazon.com, Inc.</em>, No. 2:20-cv-00848-KJM-KJN (E.D. Cal. 2021).',
+  'Kay, A. y Goldberg, A. (1977). Personal dynamic media. <em>Computer, 10</em>(3), 31-41. https://doi.org/10.1109/C-M.1977.217672',
+  'Lévy, P. (2007). <em>Cibercultura: La cultura de la sociedad digital</em> (B. Campillo, I. Chacón y F. Martorana, Trads.). Anthropos. (Trabajo original publicado en 1997)',
+  'Manovich, L. (2005). <em>El lenguaje de los nuevos medios de comunicación: La imagen en la era digital</em> (Ó. Fontrodona, Trad.). Paidós. (Trabajo original publicado en 2001)',
+  'Manovich, L. (2013). <em>El software toma el mando</em> (Y. Garcia Porres, Trad.). Editorial UOC.',
+  'Resnick, M. (2007). All I really need to know (about creative thinking) I learned (by studying how children learn) in kindergarten. En <em>Proceedings of the 6th ACM SIGCHI Conference on Creativity &amp; Cognition</em> (pp. 1-6). ACM. https://doi.org/10.1145/1254960.1254961',
+  'Solo, M. (2024, 9 de abril). <em>Prime Video meterá dos minutos de anuncios por hora de contenido a partir de hoy en España. Está por ver si será un éxito para la compañía</em>. Espinof. https://www.espinof.com/modelos-de-negocio/prime-video-metera-dos-minutos-anuncios-hora-contenido-a-partir-hoy-espana-esta-ver-sera-exito-para-compania'
 ];

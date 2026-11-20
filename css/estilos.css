@@ -166,7 +166,8 @@ body[data-epoca="2026"] .boton:not(.boton--secundario):not(.boton--aviso) { colo
   box-shadow: inset 0 -6px 0 #1b1b1b, var(--sombra);
 }
 .tele__pantalla {
-  position: relative; aspect-ratio: 4 / 3; border-radius: 22px / 18px; overflow: hidden;
+  /* overflow: clip (y no hidden) deja que la pantalla crezca si el contenido no cabe en 4:3 */
+  position: relative; aspect-ratio: 4 / 3; border-radius: 22px / 18px; overflow: hidden; overflow: clip;
   background: #0022cc; display: grid; place-items: center; text-align: center;
   font-family: var(--fuente-retro); color: #fff; padding: 20px;
 }
@@ -412,7 +413,7 @@ body[data-epoca="2026"] .reloj { color: #fff; text-shadow: none; background: tra
 .resumen__col ul { margin: 0; padding-left: 18px; font-size: 14px; color: var(--texto-suave); }
 .resumen__col li { margin-bottom: 6px; }
 .creditos { font-size: 14px; color: var(--texto-suave); }
-.creditos li { margin-bottom: 6px; }
+.creditos li { margin-bottom: 6px; overflow-wrap: anywhere; }
 .creditos a { color: var(--acento-2); }
 
 /* ---------- Modal (◀◀ Así era en 1992) ---------- */
@@ -457,6 +458,15 @@ body[data-epoca="2026"] .reloj { color: #fff; text-shadow: none; background: tra
   .cartel-horario { margin: 12px 0 0; }
   #btn-rebobinar span { display: none; }
   .barra__epoca { font-size: 13px; }
+  /* Televisor de la intro y del salto: en vertical la pantalla crece con su contenido */
+  .tele { margin-top: 2vh; padding: 16px 16px 44px; border-radius: 20px; }
+  .tele__pantalla { aspect-ratio: auto; min-height: 240px; padding: 22px 12px; }
+  .tele__marca { bottom: 14px; left: 22px; font-size: 12px; }
+  .tele__botones { bottom: 13px; right: 20px; }
+  .intro__play { font-size: 40px; }
+  .intro__titulo { font-size: 30px; }
+  .intro__sub { font-size: 18px; margin-bottom: 14px; }
+  .tele .boton--grande { font-size: 18px; padding: 12px 18px; }
 }
 
 /* ---------- Movimiento reducido ---------- */

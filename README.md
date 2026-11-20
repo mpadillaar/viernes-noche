@@ -4,6 +4,6 @@ Relato interactivo sobre la remediación del videoclub VHS por las plataformas d
 
 El usuario vive el mismo viernes por la noche dos veces: en 1992 en el videoclub del barrio y en 2026 en una plataforma de streaming. Cada escena de 2026 termina con una «ficha Manovich» que muestra qué se apropia el nuevo medio del anterior, qué le añade y qué hábitos sociales cambia.
 
-Está hecho con HTML, CSS y JavaScript, sin dependencias. Los efectos de sonido se generan con la Web Audio API.
+Está hecho con HTML, CSS y JavaScript, sin bibliotecas externas (solo las tipografías de Google Fonts). Los efectos de sonido se generan con la Web Audio API.
 
 Autor: Marcos Padilla Arroyo, 2026.

@@ -522,7 +522,7 @@ const ESCENAS = [
           tv.classList.remove('temblor');
           osd.textContent = '▶ PLAY';
           imagen.innerHTML = `${p.titulo.toUpperCase()}<small>Cinta 1 de 2</small>`;
-          res.textContent = '¡Por fin empieza la película! Es larga, así que viene en dos cintas, como Braveheart.';
+          res.textContent = '¡Por fin empieza la película! Es larga, así que viene en dos cintas, como Bailando con lobos.';
           ctx.retraso(() => {
             imagen.innerHTML = 'FIN DE LA CINTA 1<small>Inserte la cinta 2</small>';
             osd.textContent = '■ STOP';
@@ -641,7 +641,7 @@ const ESCENAS = [
         { p: caz, titulo: 'Cazadores del Tiempo (2026)', estado: '<span class="estado estado--caducado">Alquiler caducado</span>', nota: 'Desapareció sola el sábado por la noche.' }
       ];
       if (ctx.estado.comprada) items.push({ p: caz, titulo: 'Cazadores del Tiempo (2026)', estado: '<span class="estado estado--licencia">Comprada · licencia de acceso</span>', nota: 'Comprada el viernes.' });
-      items.push({ p: ven, titulo: 'Corazones en Venecia', estado: '<span class="estado estado--licencia">Comprada · licencia de acceso</span>', nota: 'Comprada en 2019.' });
+      items.push({ p: ven, titulo: 'Corazones en Venecia', estado: '<span class="estado estado--licencia">Comprada · licencia de acceso</span>', nota: 'Comprada en 2021.' });
       el.innerHTML = cabecera('2026', 8, 'El lunes',
         'Lunes, 19:40. ¿Hay que devolver algo? Mira tu biblioteca.') + `
         <div class="panel biblioteca">
